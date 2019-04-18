@@ -1,0 +1,62 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100vh;
+}
+
+body {
+  background: linear-gradient(135deg, #a5a3f4, #b3d4ff);
+  font-family: 'helvetica neue';
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input {
+  width: 80vw;
+  max-width: 1200px;
+  padding: 10px;
+  border-radius: 500px;
+  border: 2px solid white;
+  background: transparent;
+  font-size: 20px;
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: black;
+  outline: none;
+}
+
+.output {
+  width: 80vw;
+  max-width: 1200px;
+  height: 60px auto;
+  border: 2px solid white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 15px;
+  font-size: 30px;
+  background: rgba(0, 0, 255, 0.2);
+}
+
+.output #optext {
+  text-shadow: 0 0 4px black;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.output #opcode {
+  display: block;
+  color: white;
+  line-height: 12px;
+  font-size: 12px;
+  text-align: justify;
+}
